@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+
+<body>
+    <div class="register-container">
+        <h2>Đăng ký tài khoản</h2>
+        <p>Đăng ký tài khoản để sử dụng dịch vụ</p>
+        <form id="register-form">
+            <div class="name-fields">
+                <div>
+                    <label for="lastname">Họ và tên đệm</label>
+                    <input class="input" type="text" id="lastname">
+                    <div id="lastname-error" class="error-message">Họ và tên đệm không được để trống</div>
+                </div>
+                <div>
+                    <label for="firstname">Tên</label>
+                    <input class="input" type="text" id="firstname">
+                    <div id="firstname-error" class="error-message">Tên không được để trống</div>
+                </div>
+            </div>
+
+            <label for="email">Email</label>
+            <input class="input" type="email" id="email" placeholder="you@company.com">
+            <div id="email-error" class="error-message">Email không hợp lệ</div>
+
+            <label for="password">Mật khẩu</label>
+            <input class="input" type="password" id="password">
+            <div id="password-error" class="error-message">Mật khẩu phải có ít nhất 8 ký tự</div>
+
+            <label for="confirmPassword">Xác nhận mật khẩu</label>
+            <input class="input" type="password" id="confirmPassword">
+            <div id="confirmPassword-error" class="error-message">Mật khẩu không trùng khớp</div>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="terms">
+                <label for="terms">Bạn đồng ý với <a href="#">chính sách và điều khoản</a></label>
+            </div>
+            <div id="terms-error" class="error-message">Bạn cần đồng ý với điều khoản để tiếp tục</div>
+
+            <button type="submit">Đăng ký</button>
+
+            <div id="snackbar">Đăng ký thành công</div>
+
+            <p class="login-text">Bạn đã có tài khoản? <a href="../pages/login.html">Đăng nhập</a></p>
+        </form>
+    </div>
+    <script src="../js/register.js"></script>
+</body>
+
+</html>

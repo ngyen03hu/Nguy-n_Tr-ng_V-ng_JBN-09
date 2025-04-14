@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,6...lay=swap"
+        rel="stylesheet">
+
+
+<body>
+    <header class="header">
+        <div class="input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Tìm kiếm">
+        </div>
+        <div class="link-a">
+            <a href="">Trang chủ</a><a onclick="window.location.href='../pages/category-manager.html';">Môn học</a><a
+                href="">Bài
+                học</a>
+        </div>
+
+
+        <div class="navigation">
+            <div class="icon">
+                <i class="fa-regular fa-heart"></i>
+                <div class="profile-container" id="profileContainer">
+                    <button class="profile-button" id="profileButton">
+                        <i class="fa-regular fa-user"></i>
+                    </button>
+
+                    <div class="dropdown-menu">
+
+                        <ul>
+                            <li><a href="#"><i class="fas fa-user"></i> Tài khoản</a></li>
+                            <li><a href="#"><i class="fas fa-cog"></i> Cài đặt</a></li>
+                            <li class="logout"><a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Đăng
+                                    xuất</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal xác nhận đăng xuất -->
+            <div class="logout-modal" id="logoutModal">
+                <div class="logout-modal-content">
+                    <h3>Bạn có chắc muốn đăng xuất?</h3>
+                    <p>Bạn sẽ cần đăng nhập lại để tiếp tục sử dụng hệ thống.</p>
+                    <div class="logout-modal-buttons">
+                        <button class="logout-confirm" id="confirmLogout">Đăng xuất</button>
+                        <button class="logout-cancel" id="cancelLogout">Hủy bỏ</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ksjachasdkjgchksjachasdkjgch -->
+        </div>
+    </header>
+    <main>
+        <div class="tags">
+            <span class="bottom">Tất cả môn học</span>
+            <span class="smock">Đã hoàn thành</span><span class="smock">Chưa hoàn thành</span>
+        </div>
+        <div class="top">
+            <div class="card">
+                <h2>HTML cơ bản</h2>
+                <ul class="session-list">
+                    <li><i class="fa-regular fa-circle-check"></i> Session 01: Tổng quan về HTML</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Session 02: Thẻ Inline và Block</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Session 03: Thẻ hình ảnh</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Session 04: Thẻ chuyển trang</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Session 05: Thẻ Semantic</li>
+                </ul>
+                <a href="#" class="see-more">Xem thêm</a>
+            </div>
+            <div class="card">
+                <h2>CSS cơ bản</h2>
+                <ul class="session-list">
+                    <li><i class="fa-regular fa-circle-check"></i> Session 01: Tổng quan về CSS</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Session 02: Nhúng CSS vào trang Web</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Session 03: Position</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Session 04: Flexbox</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Session 05: Animation</li>
+                </ul>
+                <a href="#" class="see-more">Xem thêm</a>
+            </div>
+            <div class="card">
+                <h2>JavaScript cơ bản</h2>
+                <ul class="session-list">
+                    <li><i class="fa-regular fa-circle-check"></i> Session 01: Tổng quan ngôn ngữ JavaScript</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Session 02: Khai báo biến</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Session 03: Câu lệnh điều kiện</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Session 04: Vòng lặp </li>
+                    <li><i class="fa-regular fa-circle-check"></i> Session 05: Mảng</li>
+                </ul>
+                <a href="#" class="see-more">Xem thêm</a>
+            </div>
+        </div>
+
+        <div class="botop">
+            <div class="card">
+                <h2>Lập trình với React.js</h2>
+                <ul class="session-list">
+                    <li><i class="fa-regular fa-circle-check"></i> Session 01: Tổng quan về React.js </li>
+                    <li><i class="fa-regular fa-circle-check"></i> Session 02: Props, State, Event </li>
+                    <li><i class="fa-regular fa-circle-check"></i> Session 03: React hook </li>
+                    <li><i class="fa-regular fa-circle-check"></i> Session 04: UI Framework</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Session 05: React Router </li>
+                </ul>
+                <a href="#" class="see-more">Xem thêm</a>
+            </div>
+            <div class="card">
+                <h2>Lập trình với Java</h2>
+                <ul class="session-list">
+                    <li><i class="fa-regular fa-circle-check"></i> Session 01: Tổng quan về ngôn ngữ Java</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Session 02: Khai báo biến </li>
+                    <li><i class="fa-regular fa-circle-check"></i> Session 03: Câu lệnh điều kiện </li>
+                    <li><i class="fa-regular fa-circle-check"></i> Session 04: Vòng lặp </li>
+                    <li><i class="fa-regular fa-circle-check"></i> Session 05: Mảng</li>
+                </ul>
+                <a href="#" class="see-more">Xem thêm</a>
+            </div>
+            <div class="card">
+                <h2>HTML cơ bản</h2>
+                <h3 class="note">Chưa có bài học</h3>
+                <a href="#" class="see-more">Xem thêm</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="p">
+                <p>Chúng tôi cung cấp giải pháp học tập, giúp học sinh và <br> viên học tập tốt hơn và hiệu quả hơn.</p>
+            </div>
+            <div class="category">
+                <h3>Danh mục</h3>
+                <div class="footer-links">
+                    <a href="#">Môn học</a>
+                    <a href="#">Bài học</a>
+                    <a href="#">Ghi chú</a>
+                </div>
+            </div>
+            <div class="suppot">
+                <h3>Hỗ trợ khách hàng</h3>
+                <div class="footer-links">
+                    <a href="#">Tìm kiếm dịch vụ</a>
+                    <a href="#">Điều khoản sử dụng</a>
+                    <a href="#">Chính sách và điều khoản</a>
+                </div>
+            </div>
+        </div>
+        <div class="icon">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </footer>
+    <script src="../js/dashboard.js"></script>
+</body>
+
+</html>
